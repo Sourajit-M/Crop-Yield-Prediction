@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌾 Crop Yield Prediction</h1>
+
+        <form id="predictionForm">
+
+            <label>Year</label>
+            <input type="number" id="year" required>
+
+            <label>Average Rainfall (mm/year)</label>
+            <input type="number" id="rainfall" step="0.01" required>
+
+            <label>Pesticides (tonnes)</label>
+            <input type="number" id="pesticides" step="0.01" required>
+
+            <label>Average Temperature (°C)</label>
+            <input type="number" id="temp" step="0.01" required>
+
+            <label>Country</label>
+            <input type="text" id="area" required>
+
+            <label>Crop</label>
+            <input type="text" id="item" required>
+
+            <button type="submit">Predict Yield</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
